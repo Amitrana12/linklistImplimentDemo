@@ -4,14 +4,14 @@ using System.Text;
 
 namespace linklistImp
 {
-    class LinkedList
+   public class LinkedList
     {
         internal Node head;
         public LinkedList()
         {
             this.head = null;
         }
-        internal void Add(int item)
+        public void Add(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -24,7 +24,7 @@ namespace linklistImp
                 head = node;
             }
         }
-        internal void Append(int item)
+        public void Append(int item)
         {
             Node node = new Node(item);
             if (head == null)
@@ -39,7 +39,7 @@ namespace linklistImp
                 temp.next = node;
             }
         }
-        internal void Insert(int position, int item)
+        public void Insert(int position, int item)
         {
             Node node = new Node(item);
             if (position < 1)
