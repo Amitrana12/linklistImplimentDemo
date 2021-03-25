@@ -7,9 +7,11 @@ namespace linklistImp
         static void Main(string[] args)
         {
             Console.WriteLine("WWelcome to my linklist demo program by Amit Rana");
-            Node head = new Node(56);
-            head.next = new Node(30);
-            head.next.next = new Node(70);
+            LinkedList list = new LinkedList();
+            list.Add(70);
+            list.Add(30);
+            list.Add(56);
+            list.Display();
         }
     }
 }
