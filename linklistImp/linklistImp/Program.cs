@@ -28,6 +28,11 @@ namespace linklistImp
             Node p = list.Pop();
             System.Console.WriteLine(p.data);
             list.Display();
+
+
+            Console.WriteLine();
+            list.RemoveLastNode();
+            list.Display();
         }
     }
 }

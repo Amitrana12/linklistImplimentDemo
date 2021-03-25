@@ -6,7 +6,7 @@ namespace linklistImp
 {
     class LinkedList
     {
-        internal Node head; 
+        internal Node head;
         public LinkedList()
         {
             this.head = null;
@@ -82,6 +82,27 @@ namespace linklistImp
                 return popped;
             }
         }
+
+        internal Node RemoveLastNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Empty LinkedList");
+                return null;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                Node removedNode = temp.next;
+                temp.next = null;
+                return removedNode;
+            }
+        }
+
         internal void Display()
         {
             if (head == null)
@@ -96,4 +117,6 @@ namespace linklistImp
                 }
 
             }
+        }
+    }
 }
