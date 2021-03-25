@@ -33,6 +33,8 @@ namespace linklistImp
             Console.WriteLine();
             list.RemoveLastNode();
             list.Display();
+
+            System.Console.WriteLine(list.Search(70));
         }
     }
 }
